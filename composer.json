@@ -1,0 +1,37 @@
+{
+    "name": "karim007/laravel-agent",
+    "description": "laravel agent",
+    "type": "library",
+    "keywords": [
+        "laravel agent"
+    ],
+    "require": {
+        "php": "^7.4|^8.0|^8.1|^8.2",
+        "illuminate/support": "^6|^7|^8|^9|^10",
+        "mobiledetect/mobiledetectlib": "^4.8",
+        "jaybizzle/crawler-detect": "^1.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Karim007\\LaravelAgent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md abdul karim",
+            "email": "karim.cse007@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karim007\\LaravelAgent\\LaravelAgentsServiceProvider"
+            ],
+            "aliases": {
+                "DevTools": "Karim007\\LaravelAgent\\LaravelAgent"
+            }
+        }
+    }
+}
